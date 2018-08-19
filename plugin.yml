@@ -1,0 +1,39 @@
+main: me.xerox262.advancedwarp.AdvancedWarp
+name: AdvancedWarp
+version: 1.1
+commands:
+ set:
+  description: Creates a warp
+  aliases: [setwarp, wset]
+  usage: /<command> [name]
+  permission: advancedwarp.set
+ delete:
+  description: Removes a warp
+  aliases: [del, delwarp]
+  usage: /<command> [name]
+  permission: advancedwarp.delete
+ rename:
+  description: Change the name of a warp
+  aliases: [ren, renwarp, renamewarp, warprename]
+  usage: /<command> [old name] [new name]
+  permission: advancedwarp.rename
+ relocate:
+  description: Change the destination of a warp
+  aliases: [rel, relwarp, relocatewarp, warprelocate]
+  usage: /<command> [name]
+  permission: advancedwarp.relocate
+ lookup:
+  description: Lookup what warps belong to a player
+  aliases: [lkup]
+  usage: /<command> <player>
+  permission: advancedwarp.lookup
+ warplist:
+  description: List all the warps of the server
+  aliases: [wlist, listwarps]
+  usage: /<command> <page>
+  permission: advancedwarp.list
+ warptp:
+  description: Teleports the player/passengers/vehicles to the warp
+  aliases: [warp, wtp]
+  usage: /<command> [name] <player>
+  permission: advancedwarp.warp

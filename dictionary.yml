@@ -1,0 +1,88 @@
+# Variables
+# %X% The X coordinate all decimal places
+# %Y% The Y coordinate all decimal places
+# %Z% The Z coordinate all decimal places
+# %Yaw% Angle of the head clockwise
+# %Pitch% Angle of head forward/backwards
+# %Name% The name of the warp
+Set: '&2地标设置成功'
+# Variables
+# %oldName% The name of the warp before renaming
+# %newName% The warp's new name
+Renamed: '&2重命名地标 %oldName% 名字为 %newName%'
+# Variables
+# %name% The name of the warp deleted
+# %owner% The name of the player that owned the warp
+Deleted: '&2%owner% 的地标 %name% 已成功删除'
+# Variables
+# %oldX% %oldY% %oldZ% %oldYaw% %oldPitch% %oldWorld% Gets the warps information from before the relocation
+# %newX% %newY% %newZ% %newYaw% %newPitch% %newWorld% Gets the warps information from after the relocation
+# %name% The name of the warp they relocated
+Relocated: '&2成功重设地标 %name% 位置为 X:%newX% Y:%newY% Z:%newZ%'
+# Variables
+# %name% The name of the warp you were teleported to
+# %player% The name of the player warped
+WarpTP:
+ Warped: '&2你传送到了 %name%'
+ Warped other: '&2你传送到了 %player% 的的地标 %name%'
+# Variables
+# %warp% The name of the warp
+# %owner% The player that owns the warp
+# %warpX% %warpY% %warpZ% %warpWorld% %warpYaw% %warpPitch% The X, Y, Z, World, Yaw and Pitch of where the warp will take you
+Warp List:
+ Owner online: '&c%warp% (&a%owner%&c)'
+ Owner offline: '&c%warp% (&4%owner%&c)'
+ Separator: '&f, '
+Lookup:
+ # Variables
+ # %warp% The name of the warp 
+ # %warpX% %warpY% %warpZ% %warpWorld% %warpYaw% %warpPitch% The X, Y, Z, World, Yaw and Pitch of where the warp will take you
+ Warp: '&c%warp%'
+ # Variables
+ # %name% The name of the player that is being looked up
+ # %currentWarps% The amount of warps the player has set
+ # %warpLimit% The amount of warps the player is allowed to set (Only works if player is online)
+ Header: '%name% 的地标 已使用 %currentWarps%/%warpLimit%'
+ Separator: '&f, '
+ No limit: '无限'
+Errors:
+ Set:
+  Warp limit reached: '&c你已经达到了地标数量限制 请编辑或删除已经存在的地标'
+  Warp already exists: '&c这个地标已经存在了，请使用编辑功能编辑位置而不是再次创建'
+  Name not specified: '&c你要去的那个坐标不存在'
+  No permission: '&c你没有权限创建这个地标'
+  Player only: '&cThis command can only be executed by players'
+ Rename:
+  Warp already exists: '&c另一个地标已经使用这个名字了'
+  Not warp owner: '&c那不是你的地标 你没有权限这么做'
+  Did not enter new name: '&c你没有输入新的地标名'
+  Warp does not exist: '&c这个地标不存在'
+  Did not enter warp to rename: '&c你没有输入你希望重命名的地标'
+  No permission: '&c你没有权限重命名这个地标'
+ Relocate:
+  Not warp owner: '&c那不是你的地标 你没有权限这样做'
+  Player only: '&cConsole cannot relocate a warp'
+  No permission: '&cYou do not have permission to relocate a warp'
+  Warp not specified: '&c你没有指定想重设位置的地标'
+  Warp does not exist: '&c地表不存在'
+ Delete:
+  Not warp owner: '&c那不是你的地标 你没有权限这样做'
+  Warp does not exist: '&c地标不存在'
+  Warp not specified: '&c你没有指定你想要删除的地标'
+  No permission: '&cYou do not have permission to delete warps'
+ WarpTP:
+  Player not online: '&c那个玩家还不在线 请等待对方上线'
+  Console can not warp: '&cThe console can not warp, you must specify which player to warp to the destination'
+  Warp not specified: '&c你没有输入你想传送到的地标名字'
+  Warp does not exist: '&c地表不存在'
+  No permission: '&cYou do not have permission to warp'
+  No permission to warp others: '&cYou do not have permission to warp other players'
+ Warp List:
+  Not enough warps: '&c服务器上还没这么多地标...'
+  No permission: '&cYou do not have permission to list warps'
+ Lookup: 
+  # Variables
+  # %player% The player that is being looked up
+  Player has no warps: '&c%player% 没有任何地标'
+  No permission: '&cYou do not have permission to lookup player warps'
+  Player not specified: '&c你必须制定一个玩家查看'
